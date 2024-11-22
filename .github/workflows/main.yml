@@ -6,6 +6,7 @@ jobs:
   steps:
    - run: echo "Hello, World!"
  say-bye:
+  needs: {"say-hello"}
   runs-on: ubuntu-latest
   steps:
    - run: echo "Bye, World!"
